@@ -9,14 +9,17 @@ def txt_to_dict(file_name):
     L = L[1:]
     data = {}
 
-    #extract variable names from txt
+    #extract column names from txt
     names = column.split('\t')
+    
+    #find zipcode column's index
     for m in range(len(names)):
         if "zip" in names[m].lower():
             index = m
+
+    #zipcode to state and txt to dictionary
     for variable_name in names:
         data[variable_name] = []
-
     for i in range(len(L)):
         variable = L[i][:-1].split('\t')
         try:
@@ -42,7 +45,6 @@ def txt_to_dict(file_name):
             continue
 
     data_pd = DataFrame(data, columns=names)
-    print (data_pd)
     return data_pd
 
 def output(data, outfile):
