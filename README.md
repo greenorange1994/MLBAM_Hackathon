@@ -8,3 +8,5 @@ Whole day hackthon aiming to explore fan engagement patterns with (relatively) b
 greenorange1994 was mainly responsible for cleaning, organizing and analyzing data. She also drew bar charts for final presentation.
 
 wanting0wang converted txt data files to csv files, filtered keywords in twitter posts for basic text analysis, and participated in creating the final report.
+
+vivccc visualized data and delivered the presentation.
